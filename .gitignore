@@ -1,0 +1,14 @@
+.idea/
+*.idea/
+AutoMate/data/
+AutoMate/HandsOnProjectBase/
+AutoMate/venv/
+FlaskTutorial/
+SelfLearn/
+*__pycache__/
+*.flaskenv
+*Pipfile
+*Pipfile.lock
+*.pyw
+WebCrawler/Chapter02/*txt
+WebCrawler/Chapter02/results/
