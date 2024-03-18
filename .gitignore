@@ -9,6 +9,5 @@ SelfLearn/
 *.flaskenv
 *Pipfile
 *Pipfile.lock
-*.pyw
 WebCrawler/Chapter02/*txt
 WebCrawler/Chapter02/results/

@@ -5,6 +5,7 @@
 
 import zipfile, os
 
+
 def backupToZip(folder):
     # Backup the entire contents of "folder" into a zip file.
 
