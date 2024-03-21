@@ -23,12 +23,14 @@ def print_http_info():
     response = urllib.request.urlopen('https://www.python.org')
     print(response.status)
     print(response.getheaders())
-    print(response.getheader('Server'))
+    # print(type(response.getheaders()[0]))
+    print(response.getheader('Connection'))
 
 
 # urllib 的 data 参数
 def print_http_data():
     data = bytes(urllib.parse.urlencode({'name':'germey'}), encoding='utf-8')
+    print(type(data))
     response = urllib.request.urlopen('https://www.httpbin.org/post', data=data)
     print(response.read().decode('utf-8'))
 
@@ -44,7 +46,7 @@ def print_http_timeout():
 
 # Request 对象
 def print_http_request():
-    request = urllib.request.Request('https://python.org')
+    request = urllib.request.Request('https://www.baidu.com')
     response = urllib.request.urlopen(request)
     print(response.read().decode('utf-8'))
 
@@ -277,5 +279,6 @@ def print_http_robot_parse2():
 
 
 if __name__ == '__main__':
+    print_http_request()
     # print_http_robot_parse2()
     print('Done')
